@@ -1,7 +1,8 @@
 
 Challenge 1) Create a Simple JSX Element
 	React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript. 
-	However, because JSX is not valid JavaScript, JSX code must be compiled into JavaScript. The transpiler Babel is a popular tool for this process
+	However, because JSX is not valid JavaScript, JSX code must be compiled into JavaScript. 
+	The transpiler Babel is a popular tool for this process
 	
 	const JSX = <h1>Hello JSX!</h1>;
 
@@ -34,5 +35,9 @@ Challenge 4) Render HTML Elements to the DOM
 
 	ReactDOM.render(JSX, document.getElementById('challenge-node'))
 
-Challenge 5) Define an HTML Class in JSX = in JSX you can no longer use the word class to define HTML classes, beacause class is a reserved word in JavaScript. 	     Instead, JSX uses className.
-	  <div className="myDiv">
+Challenge 5) Define an HTML Class in JSX = in JSX you can no longer use the word class to define HTML classes, 
+	     beacause class is a reserved word in JavaScript. 	     
+	     Instead, JSX uses className.
+
+	    <div className="myDiv">
+

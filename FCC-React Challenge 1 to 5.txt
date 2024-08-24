@@ -1,0 +1,38 @@
+
+Challenge 1) Create a Simple JSX Element
+	React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript. 
+	However, because JSX is not valid JavaScript, JSX code must be compiled into JavaScript. The transpiler Babel is a popular tool for this process
+	
+	const JSX = <h1>Hello JSX!</h1>;
+
+Challenge 2) Create a Complex JSX Element = one parent element would wrap all of the other levels of nested elements.
+      const JSX = 
+	<div>
+  	   <h1></h1>
+           <p></p>
+           <ul>
+   	     <li></li>
+    	     <li></li>
+    	     <li></li>
+  	</ul>
+	</div>
+
+Challenge 3) Add Comments in JSX = To put comments inside JSX, you use the syntax {/* */}
+	const JSX = (
+  	<div>
+ 	 {/* Comment */}
+    	    <h1>This is a block of JSX</h1>
+            <p>Here's a subtitle</p>
+       </div>
+       );
+
+Challenge 4) Render HTML Elements to the DOM
+	ReactDOM offers a simple method to render React elements to the DOM which looks like this: 
+	ReactDOM.render(componentToRender, targetNode), 
+	        where the first argument is the React element or component that you want to render, 
+		and the second argument is the DOM node that you want to render the component to.
+
+	ReactDOM.render(JSX, document.getElementById('challenge-node'))
+
+Challenge 5) Define an HTML Class in JSX = in JSX you can no longer use the word class to define HTML classes, beacause class is a reserved word in JavaScript. 	     Instead, JSX uses className.
+	  <div className="myDiv">

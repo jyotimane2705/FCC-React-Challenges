@@ -1,0 +1,120 @@
+
+Challenge 41) Give Sibling Elements a Unique Key Attribute = 
+
+const frontEndFrameworks = [
+  'React',
+  'Angular',
+  'Ember',
+  'Knockout',
+  'Backbone',
+  'Vue'
+];
+
+function Frameworks() {
+  const renderFrameworks =  frontEndFrameworks.map((item) => <li key={item}>{item}</li> ); // Change this line
+  return (
+    <div>
+      <h1>Popular Front End JavaScript Frameworks</h1>
+      <ul>
+        {renderFrameworks}
+      </ul>
+    </div>
+  );
+};
+
+
+Challenge 42) Use Array.filter() to Dynamically Filter an Array = 
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [
+        {
+          username: 'Jeff',
+          online: true
+        },
+        {
+          username: 'Alan',
+          online: false
+        },
+        {
+          username: 'Mary',
+          online: true
+        },
+        {
+          username: 'Jim',
+          online: false
+        },
+        {
+          username: 'Sara',
+          online: true
+        },
+        {
+          username: 'Laura',
+          online: true
+        }
+      ]
+    };
+  }
+  render() {
+    const usersOnline = this.state.users.filter(user => user.online === true); // Change this line
+    const renderOnline = usersOnline.map(user => <li key={user.username}>{user.username}</li>); // Change this line
+    return (
+      <div>
+        <h1>Current Online Users:</h1>
+        <ul>{renderOnline}</ul>
+      </div>
+    );
+  }
+}
+
+Challenge 43) Render React on the Server with renderToString = Rendering React on the server with renderToString is beneficial for two main reasons:
+
+    1) SEO Optimization: Server-side rendering (SSR) provides a fully rendered HTML page to the client, which search engines can easily crawl and index. Without SSR, the initial load consists of a mostly empty HTML file and a large JavaScript bundle, which isn't ideal for SEO.
+
+    2) Improved Performance: SSR results in a faster initial page load because the HTML sent to the client is smaller than the JavaScript required for the entire app. This allows users to see content more quickly while React still takes over for further interactions.
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <div/>
+  }
+};
+
+// Change code below this line
+
+ReactDOMServer.renderToString(<App />);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
